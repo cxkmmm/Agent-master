@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能家居售后助手</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%234f46e5'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-size='23' fill='white' font-family='Arial'%3EAI%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-mark">AI</div>
+                <div>
+                    <h1>智能家居售后助手</h1>
+                    <p>产品咨询 · 故障排查 · 使用报告</p>
+                </div>
+            </div>
+            <div class="topbar-actions">
+                <span class="status"><i></i> 在线</span>
+                <button id="new-chat" class="new-chat" type="button">新对话</button>
+            </div>
+        </header>
+
+        <main id="messages" class="messages" aria-live="polite"></main>
+
+        <footer class="composer">
+            <form id="chat-form" class="input-box">
+                <textarea
+                    id="message-input"
+                    rows="1"
+                    maxlength="4000"
+                    placeholder="输入你的问题，比如：空气净化器怎么使用？"
+                    aria-label="输入问题"
+                ></textarea>
+                <button id="send-button" type="submit">发送</button>
+            </form>
+            <p class="hint">Enter 发送，Shift + Enter 换行</p>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

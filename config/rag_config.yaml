@@ -1,0 +1,2 @@
+chat_model: deepseek-chat
+embedding_model: text-embedding-v4

@@ -1,0 +1,17 @@
+fastapi==0.143.3
+uvicorn==0.54.0
+langchain==1.4.3
+langchain-core==1.6.6
+langchain-community==0.4.2
+langchain-chroma==1.1.0
+langgraph==1.2.12
+chromadb==1.5.9
+dashscope==1.27.7
+pypdf==6.20.1
+python-dotenv==1.2.4
+PyYAML==6.0.3
+pydantic==2.13.5
+
+# Test and HTTP client
+pytest==9.1.1
+httpx==0.28.1

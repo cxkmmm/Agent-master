@@ -1,0 +1,12 @@
+
+collection_name: smarthome_after_sales
+persist_directory: storage/chroma
+
+k: 5
+data_path: data/knowledge
+md5_hex_path: storage/ingested_files.txt
+allow_knowledge_file_type: ['md', 'txt', 'pdf']
+
+chunk_size: 600
+chunk_overlap: 80
+separators: ["\n\n", "\n", "。", "！", "？", "；", "，", " ", ""]

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smarthome-after-sales-agent"
+version = "0.1.0"
+description = "一个可测试的 RAG + 工具调用演示，用于(smarthome-after-sales-agent)智能家居售后支持"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.143.3",
+    "uvicorn==0.54.0",
+    "langchain==1.4.3",
+    "langchain-core==1.6.6",
+    "langchain-community==0.4.2",
+    "langchain-chroma==1.1.0",
+    "langgraph==1.2.12",
+    "chromadb==1.5.9",
+    "dashscope==1.27.7",
+    "pypdf==6.20.1",
+    "python-dotenv==1.2.4",
+    "PyYAML==6.0.3",
+    "pydantic==2.13.5",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

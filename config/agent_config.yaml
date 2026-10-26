@@ -1,0 +1,6 @@
+
+external_data_path: data/external/usage_records.csv
+demo_user_id: "1001"
+demo_city: "北京"
+demo_month: "2025-01"
+demo_weather: "晴，22℃，湿度45%"
